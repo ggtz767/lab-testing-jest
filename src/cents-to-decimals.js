@@ -4,9 +4,11 @@ function centsToDecimals(centValue) {
   }
 
   let result = centValue / 100;
-
   return result.toFixed(2) + '$';
 }
 
+centsToDecimals(300);
 // The following is required to make automated tests run. Please ignore it.
-if (typeof module !== 'undefined') module.exports = { centsToDecimals };
+if (typeof module !== 'undefined'){
+  module.exports =  centsToDecimals ;
+} 
